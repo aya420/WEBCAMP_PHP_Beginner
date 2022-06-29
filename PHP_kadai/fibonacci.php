@@ -1,13 +1,14 @@
 <?php
 
-$a = 0;    
-$b = 1; 
+$a = 0;
+$b = 1;
 
-for($i=0;$i<20;$i++)    
-{    
-    $c = $a + $b;    
-    echo "{$c}";  
-    echo "\n";   
-    $a=$b;       
-    $b=$c;
-}   
+echo "{$a} \n";
+echo "{$b} \n";
+
+while($c <= 10000) {
+    $c = $a + $b;
+    $a = $b;
+    $b = $c;
+    echo "{$c} \n";
+} 
